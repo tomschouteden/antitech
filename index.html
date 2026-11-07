@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>antitech.eu — the tech Europe doesn't get</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ECE7DC;
+    --paper-2:#E3DDCF;
+    --ink:#121110;
+    --mute:#6B665C;
+    --line:#121110;
+    --signal:#003399;
+    --star:#FFCC00;
+    --ok:#1F5C3A;
+    --mono:"IBM Plex Mono", ui-monospace, monospace;
+    --sans:"Archivo", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--paper);color:var(--ink)}
+  body{font-family:var(--sans);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+
+  /* ticker */
+  .ticker{background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--ink)}
+  .ticker span{display:inline-block;padding:7px 0;animation:tick 60s linear infinite}
+  .ticker b{color:var(--star);font-weight:600}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker span{animation:none}}
+
+  /* masthead */
+  header{display:grid;grid-template-columns:1fr auto;gap:24px;padding:28px 28px 0;border-bottom:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}
+  h1{font-variation-settings:"wdth" 62;font-weight:900;font-size:clamp(84px,17vw,260px);line-height:.8;
+    letter-spacing:-.02em;text-transform:uppercase;margin:14px 0 0 -6px}
+  h1 em{font-style:normal;color:var(--signal)}
+  .dek{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:28px;align-items:end;
+    padding:22px 0 26px;border-top:1px solid var(--line);margin-top:18px}
+  .dek p{font-size:19px;line-height:1.35;font-variation-settings:"wdth" 90}
+  .stats{display:flex;justify-content:flex-end;gap:0;border-left:1px solid var(--line)}
+  .stat{padding:0 22px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0;padding-right:0}
+  .stat .n{font-variation-settings:"wdth" 70;font-weight:800;font-size:46px;line-height:1;font-variant-numeric:tabular-nums}
+  .stat .l{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-top:6px}
+  .stat.hot .n{color:var(--signal)}
+  .meta{text-align:right;font-family:var(--mono);font-size:12px;color:var(--mute);line-height:1.6}
+
+  /* filters */
+  .bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:0;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+  .group{display:flex;align-items:stretch;border-right:1px solid var(--line)}
+  .group > span{padding:12px 14px;color:var(--mute)}
+  .bar button{all:unset;cursor:pointer;padding:12px 12px;border-left:1px solid transparent}
+  .bar button:hover{background:var(--paper-2)}
+  .bar button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+  .bar .sort{margin-left:auto;border-right:0;border-left:1px solid var(--line)}
+
+  /* grid */
+  main{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
+    border-left:1px solid var(--line)}
+  .tile{position:relative;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:18px 20px 16px;display:flex;flex-direction:column;min-height:400px;background:var(--paper);
+    transition:background .15s}
+  .tile:hover{background:#F3EFE6}
+  .tile.missing::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(-45deg,transparent 0 11px,rgba(18,17,16,.045) 11px 12px)}
+  .row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--mono);
+    font-size:11.5px;text-transform:uppercase;letter-spacing:.08em}
+  .idx{color:var(--mute)}
+  .status{padding:3px 7px;border:1px solid var(--ink)}
+  .status.missing{background:var(--signal);border-color:var(--signal);color:#fff}
+  .status.removed{background:var(--ink);color:var(--paper)}
+  .status.late{color:var(--ok);border-color:var(--ok)}
+  .status.partial{border-style:dashed}
+  .co{margin-top:20px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+  .tile h2{font-variation-settings:"wdth" 72;font-weight:800;font-size:34px;line-height:.95;
+    text-transform:uppercase;letter-spacing:-.005em;margin-top:6px}
+  .tile p.what{margin-top:12px;color:#2b2925;font-size:14.5px;max-width:42ch}
+  .count{margin-top:auto;padding-top:22px;display:flex;align-items:baseline;gap:10px}
+  .count .n{font-variation-settings:"wdth" 62;font-weight:900;font-size:88px;line-height:.82;
+    font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .tile.missing .count .n{color:var(--signal)}
+  .count .u{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;line-height:1.35;color:var(--mute)}
+  .foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);display:grid;gap:8px}
+  .regions{display:flex;gap:4px}
+  .regions i{font-style:normal;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 5px;
+    background:var(--ink);color:var(--paper);letter-spacing:.04em}
+  .rule{font-family:var(--mono);font-size:12px;display:flex;gap:8px;justify-content:space-between;align-items:baseline}
+  .rule b{font-weight:600}
+  .cite{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);white-space:nowrap}
+  .cite.stated{color:var(--ink)}
+  .cite.stated::before{content:"● "}
+  .cite.inferred::before{content:"○ "}
+  .src{font-family:var(--mono);font-size:11px;color:var(--mute)}
+  .src a{color:var(--mute);text-underline-offset:2px}
+  .src a:hover{color:var(--ink)}
+
+  /* footer */
+  footer{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:28px;font-size:13.5px;color:#2b2925}
+  footer h3{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;color:var(--ink)}
+  footer ul{list-style:none;font-family:var(--mono);font-size:12px;line-height:1.8}
+
+  .empty{padding:60px 28px;font-family:var(--mono);color:var(--mute);grid-column:1/-1}
+
+  @media (max-width:760px){
+    header{padding:20px 16px 0;grid-template-columns:1fr}
+    .meta{text-align:left}
+    .dek{grid-template-columns:1fr}
+    .stats{justify-content:flex-start;border-left:0}
+    .stat:first-child{padding-left:0}
+    .stat .n{font-size:34px}
+    footer{grid-template-columns:1fr;padding:20px 16px}
+    .bar .sort{margin-left:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><span id="ticker"></span></div>
+
+<header>
+  <div>
+    <div class="kicker">A running ledger of what Europe is left out of</div>
+    <h1>Anti<br>tech<em>.eu</em></h1>
+  </div>
+  <div class="meta">
+    Draft v0.1<br>
+    Last checked <span id="today"></span><br>
+    <span id="count-items"></span> entries
+  </div>
+  <div class="dek">
+    <p>The features, products and machines that launched elsewhere and then stopped at Europe's border, along with the rule each one was held back by.</p>
+    <div class="stats">
+      <div class="stat hot"><div class="n" id="s-missing">–</div><div class="l">Still missing</div></div>
+      <div class="stat"><div class="n" id="s-days">–</div><div class="l">Days behind, combined</div></div>
+      <div class="stat"><div class="n" id="s-cos">–</div><div class="l">Companies</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="bar" aria-label="Filters">
+  <div class="group" id="f-status"><span>Status</span></div>
+  <div class="group" id="f-rule"><span>Rule</span></div>
+  <div class="group sort" id="f-sort"><span>Sort</span></div>
+</nav>
+
+<main id="grid"></main>
+
+<footer>
+  <div>
+    <h3>How to read a tile</h3>
+    <p>The big number counts days between the launch elsewhere and the launch in Europe. For anything still missing, it keeps counting from today. <b>● Stated</b> means the company itself named the rule. <b>○ Inferred</b> means the company gave no reason and the link to regulation comes from press reporting.</p>
+  </div>
+  <div>
+    <h3>Draft notes</h3>
+    <ul>
+      <li>Some dates are approximate (marked ~). Verify them before publishing.</li>
+      <li>Status as of the "last checked" date above.</li>
+      <li>Corrections welcome. Each tile links its sources.</li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+// launched: first availability elsewhere. arrived: first availability in Europe (null = still missing).
+// status: missing | removed | late | partial
+let ITEMS = [], UPDATED = null;
+
+const DAY = 86400000;
+const today = new Date(); today.setHours(0,0,0,0);
+const d = s => new Date(s+"T00:00:00");
+const daysBehind = it => Math.max(0, Math.round(((it.arrived ? d(it.arrived) : today) - d(it.launched)) / DAY));
+const fmt = n => n.toLocaleString("en-GB");
+const fmtDate = s => d(s).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+const STATUS_LABEL = {missing:"Not available", removed:"Removed", late:"Arrived late", partial:"Partial"};
+
+function unitText(it){
+  const a = it.approx ? "~" : "";
+  if (it.status === "removed") return `days since launch<br>removed ${fmtDate(it.removed)}`;
+  if (!it.arrived) return `days and counting<br>since ${a}${fmtDate(it.launched)}`;
+  return `days late<br>${a}${fmtDate(it.launched)} → ${it.approx2?"~":""}${fmtDate(it.arrived)}`;
+}
+
+function tile(it, i){
+  const n = it.status === "removed" ? Math.round((today - d(it.launched))/DAY) : daysBehind(it);
+  return `<article class="tile ${it.status === "missing" || it.status === "removed" ? "missing" : ""}">
+    <div class="row"><span class="idx">№ ${String(i+1).padStart(2,"0")}</span><span class="status ${it.status}">${STATUS_LABEL[it.status]}</span></div>
+    <div class="co">${it.co}</div>
+    <h2>${it.name}</h2>
+    <p class="what">${it.what}</p>
+    <div class="count"><span class="n">${fmt(n)}</span><span class="u">${unitText(it)}</span></div>
+    <div class="foot">
+      <div class="rule"><span>Held back by <b>${it.rule}</b></span><span class="cite ${it.cite}">${it.cite}</span></div>
+      <div class="rule"><span class="regions">${it.regions.map(r=>`<i>${r}</i>`).join("")}</span>
+        <span class="src">${it.src.map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(" · ")}</span></div>
+    </div>
+  </article>`;
+}
+
+const state = {status:"all", rule:"all", sort:"days"};
+const RULES = ["all","DMA","GDPR","AI Act","Other"];
+const ruleMatch = (it, r) => r === "all" ? true
+  : r === "Other" ? !/DMA|GDPR|AI Act/.test(it.rule) : it.rule.includes(r);
+
+function render(){
+  let list = ITEMS.filter(it =>
+    (state.status === "all" || (state.status === "missing" ? (it.status==="missing"||it.status==="removed") : !(it.status==="missing"||it.status==="removed")))
+    && ruleMatch(it, state.rule));
+  // still-missing first, partial next, arrived last; chosen sort applies within each group
+  const RANK = {missing:0, removed:0, partial:1, late:2};
+  const within = {
+    days: (a,b)=>daysBehind(b)-daysBehind(a),
+    recent: (a,b)=>d(b.launched)-d(a.launched),
+    company: (a,b)=>a.co.localeCompare(b.co),
+  }[state.sort];
+  list.sort((a,b)=>RANK[a.status]-RANK[b.status] || within(a,b));
+  document.getElementById("grid").innerHTML = list.length
+    ? list.map(tile).join("") : `<div class="empty">Nothing matches these filters.</div>`;
+}
+
+function buttons(id, key, opts){
+  const g = document.getElementById(id);
+  opts.forEach(([v,label])=>{
+    const b = document.createElement("button");
+    b.textContent = label; b.setAttribute("aria-pressed", state[key]===v);
+    b.onclick = ()=>{ state[key]=v; g.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed", x===b)); render(); };
+    g.appendChild(b);
+  });
+}
+buttons("f-status","status",[["all","All"],["missing","Still missing"],["arrived","Arrived"]]);
+buttons("f-rule","rule",RULES.map(r=>[r, r==="all"?"Any":r]));
+buttons("f-sort","sort",[["days","Longest wait"],["recent","Newest"],["company","Company"]]);
+
+// header stats + ticker
+function header(){
+  document.getElementById("today").textContent = fmtDate(UPDATED);
+  document.getElementById("count-items").textContent = ITEMS.length;
+  document.getElementById("s-missing").textContent = ITEMS.filter(i=>i.status==="missing"||i.status==="removed").length;
+  document.getElementById("s-days").textContent = fmt(ITEMS.filter(i=>i.status!=="removed").reduce((s,i)=>s+daysBehind(i),0));
+  document.getElementById("s-cos").textContent = new Set(ITEMS.flatMap(i=>i.co.split(" · "))).size;
+  const t = ITEMS.map(i=>`${i.co} ${i.name} <b>■</b> ${i.status==="missing"?"not available in your region":i.status==="removed"?"removed in your region":"arrived late"}`).join(" &nbsp;/&nbsp; ");
+  document.getElementById("ticker").innerHTML = t + " &nbsp;/&nbsp; " + t + " &nbsp;/&nbsp; ";
+}
+
+fetch("data/items.json", {cache:"no-cache"}).then(r=>r.json()).then(data=>{
+  ITEMS = data.items; UPDATED = data.updated;
+  header(); render();
+});
+</script>
+</body>
+</html>

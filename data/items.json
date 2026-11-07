@@ -1,0 +1,445 @@
+{
+  "updated": "2026-11-07",
+  "items": [
+    {
+      "co": "Apple",
+      "name": "Siri AI",
+      "what": "The new LLM-powered Siri app, upgraded Visual Intelligence and Writing Tools on iPhone and iPad. EU developers can't use the APIs either.",
+      "launched": "2026-09-15",
+      "approx": true,
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "AppleInsider",
+          "https://appleinsider.com/articles/26/06/08/siri-ai-new-apple-intelligence-not-coming-to-eu-right-away-thanks-to-dma"
+        ],
+        [
+          "MacRumors",
+          "https://macrumors.com/2026/06/08/siri-ai-not-available-eu-china"
+        ]
+      ]
+    },
+    {
+      "co": "Meta",
+      "name": "Muse",
+      "what": "Meta's AI agent that does tasks for you across apps and WhatsApp. Launched in the US, then Canada, Japan and Singapore.",
+      "launched": "2026-09-08",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU",
+        "UK",
+        "CH"
+      ],
+      "rule": "AI Act / GDPR",
+      "cite": "inferred",
+      "src": [
+        [
+          "schieb.de",
+          "https://www.schieb.de/meta-ai-muse-der-ki-agent-der-fuer-dich-arbeitet-nur-nicht-in-europa"
+        ],
+        [
+          "Notebookcheck",
+          "https://www.notebookcheck.com/Meta-Muse-kommt-aufs-iPad-nach-Deutschland-aber-weiterhin-nicht.1419095.0.html"
+        ]
+      ]
+    },
+    {
+      "co": "OpenAI",
+      "name": "Dots",
+      "what": "ChatGPT's new agent feature, unveiled at DevDay. OpenAI says it is still talking to regulators about Europe.",
+      "launched": "2026-09-29",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU",
+        "UK",
+        "CH"
+      ],
+      "rule": "Unstated",
+      "cite": "inferred",
+      "src": [
+        [
+          "Tutkit",
+          "https://www.tutkit.com/en/news/898-chatgpt-dots-europe-pro-accounts"
+        ],
+        [
+          "DataNorth",
+          "https://datanorth.ai/nl/nieuws/chatgpt-dots-berichten-imessage-rcs"
+        ]
+      ]
+    },
+    {
+      "co": "Google",
+      "name": "Gemini Personal Intelligence",
+      "what": "Gemini draws on your Gmail, Photos and other Google apps to give personal answers. Available worldwide to paid users, except in Europe.",
+      "launched": "2026-01-14",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU",
+        "UK",
+        "CH"
+      ],
+      "rule": "Unstated",
+      "cite": "inferred",
+      "src": [
+        [
+          "Thurrott",
+          "https://www.thurrott.com/?p=334919"
+        ],
+        [
+          "NewsBytes",
+          "https://www.newsbytesapp.com/news/science/google-launches-personal-intelligence-for-gemini-excluding-eea-switzerland-uk/tldr"
+        ]
+      ]
+    },
+    {
+      "co": "Tesla",
+      "name": "FSD (Supervised)",
+      "what": "Tesla's driver-assist that steers through city streets. The Netherlands approved it in April 2026, and a few countries followed. The EU-wide vote is still pending.",
+      "launched": "2022-11-24",
+      "approx": true,
+      "arrived": "2026-04-10",
+      "status": "partial",
+      "regions": [
+        "EU"
+      ],
+      "rule": "Vehicle type-approval",
+      "cite": "stated",
+      "src": [
+        [
+          "The Next Web",
+          "https://thenextweb.com/news/tesla-fsd-supervised-netherlands-europe"
+        ],
+        [
+          "InsideEVs",
+          "https://insideevs.com/news/779890/tesla-fsd-europe-approval-2026-netherlands/"
+        ]
+      ]
+    },
+    {
+      "co": "Waymo · Baidu · Zoox",
+      "name": "Robotaxis",
+      "what": "Fully driverless ride-hailing, available to the public in US and Chinese cities. No commercial service anywhere in the EU yet. Waymo is aiming for London.",
+      "launched": "2018-12-05",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU",
+        "UK"
+      ],
+      "rule": "No AV framework",
+      "cite": "inferred",
+      "src": [
+        [
+          "eWeek",
+          "https://www.eweek.com/news/waymo-robotaxi-london-launch-uk-2026/"
+        ],
+        [
+          "Engadget",
+          "https://engadget.com/transportation/evs/waymo-plans-to-launch-fully-autonomous-taxi-service-in-london-next-year-142453250.html"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "Advanced Data Protection",
+      "what": "End-to-end encryption for iCloud backups, photos and notes. Apple pulled it in the UK rather than build a government backdoor.",
+      "launched": "2022-12-13",
+      "arrived": null,
+      "removed": "2025-02-21",
+      "status": "removed",
+      "regions": [
+        "UK"
+      ],
+      "rule": "Investigatory Powers Act",
+      "cite": "stated",
+      "src": [
+        [
+          "Six Colors",
+          "https://sixcolors.com/post/2025/02/apple-is-removing-its-advanced-data-protection-feature-in-the-uk/"
+        ],
+        [
+          "Silicon UK",
+          "https://silicon.co.uk/e-regulation/surveillance/apple-withdraws-advanced-data-protection-for-uk-after-government-order-600818"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "iPhone Mirroring",
+      "what": "Control your iPhone from your Mac, notifications included. Still disabled in the EU, along with SharePlay screen sharing.",
+      "launched": "2024-09-16",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "heise",
+          "https://heise.de/-10465309"
+        ],
+        [
+          "Thurrott",
+          "https://www.thurrott.com/mobile/322784/apple-to-delay-some-ios-26-features-in-the-eu-over-dma-compliance-concerns"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "Watch Wi-Fi Sync",
+      "what": "Your Apple Watch used to pick up the Wi-Fi networks your iPhone knows. Apple switched this off in the EU rather than open it to third-party accessories.",
+      "launched": "2015-04-24",
+      "arrived": null,
+      "removed": "2025-12-12",
+      "approx": true,
+      "status": "removed",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "AppleInsider",
+          "https://appleinsider.com/articles/25/11/05/apple-plans-to-remove-wi-fi-network-syncing-on-apple-watch-in-the-eu"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "Maps Visited Places",
+      "what": "Apple Maps remembers places you've been and learns your preferred routes. Part of iOS 26 everywhere except the EU.",
+      "launched": "2025-09-15",
+      "arrived": null,
+      "status": "missing",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "heise",
+          "https://heise.de/-10465309"
+        ]
+      ]
+    },
+    {
+      "co": "Meta",
+      "name": "Meta AI",
+      "what": "Meta's assistant in WhatsApp, Instagram and Messenger. It reached the EU 18 months late and text-only, without image generation or multimodal features.",
+      "launched": "2023-09-27",
+      "arrived": "2025-03-20",
+      "status": "partial",
+      "regions": [
+        "EU"
+      ],
+      "rule": "GDPR",
+      "cite": "stated",
+      "src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2025/03/20/meta-ai-is-finally-coming-to-the-eu-but-with-limitations"
+        ],
+        [
+          "The Decoder",
+          "https://the-decoder.com/meta-launches-ai-assistant-in-eu-with-limited-features/"
+        ]
+      ]
+    },
+    {
+      "co": "Meta",
+      "name": "Ray-Ban Meta AI",
+      "what": "Ask your glasses what you're looking at. The AI assistant reached EU wearers about a year after the US, and the camera features came last.",
+      "launched": "2023-10-17",
+      "approx": true,
+      "arrived": "2024-11-13",
+      "approx2": true,
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "GDPR",
+      "cite": "stated",
+      "src": [
+        [
+          "Meta",
+          "https://about.fb.com/news/2025/04/meta-ai-begins-roll-out-on-ray-ban-meta-glasses-to-even-more-countries-in-the-EU/"
+        ],
+        [
+          "TechCrunch",
+          "https://techcrunch.com/?p=2916809"
+        ]
+      ]
+    },
+    {
+      "co": "Google",
+      "name": "AI Overviews & AI Mode",
+      "what": "AI-written answers at the top of Google Search. Rolled out in the EU late and only partly. France is still waiting.",
+      "launched": "2024-05-14",
+      "arrived": "2025-03-26",
+      "approx2": true,
+      "status": "partial",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA / GDPR",
+      "cite": "stated",
+      "src": [
+        [
+          "Euronews",
+          "https://www.euronews.com/2025/04/01/googles-ai-feature-on-hold-in-most-eu-member-states-due-to-strict-rules"
+        ],
+        [
+          "La Réclame",
+          "https://lareclame.fr/google-ai-mode-europe-324203"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "Apple Intelligence",
+      "what": "Apple's on-device AI: Writing Tools, notification summaries and Genmoji. It reached the EU with iOS 18.4, five months after the US.",
+      "launched": "2024-10-28",
+      "arrived": "2025-03-31",
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "AppleInsider",
+          "https://appleinsider.com/articles/26/06/08/siri-ai-new-apple-intelligence-not-coming-to-eu-right-away-thanks-to-dma"
+        ]
+      ]
+    },
+    {
+      "co": "Apple",
+      "name": "AirPods Live Translation",
+      "what": "Real-time translated conversation through your AirPods. Held back in the EU at the iOS 26 launch, then arrived with iOS 26.2.",
+      "launched": "2025-09-15",
+      "arrived": "2025-12-12",
+      "approx2": true,
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA",
+      "cite": "stated",
+      "src": [
+        [
+          "MacRumors",
+          "https://www.macrumors.com/2025/11/04/ios-26-2-expands-live-translation-on-airpods-to-eu/"
+        ]
+      ]
+    },
+    {
+      "co": "xAI",
+      "name": "Grok",
+      "what": "xAI's chatbot. It was unavailable in many European countries for a long time, and its training on EU user data is under investigation in Ireland and France.",
+      "launched": "2023-11-04",
+      "arrived": "2025-01-15",
+      "approx": true,
+      "approx2": true,
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "GDPR",
+      "cite": "inferred",
+      "src": [
+        [
+          "MSPowerUser",
+          "https://mspoweruser.com/why-is-xais-new-grok-3-model-not-available-in-europe"
+        ],
+        [
+          "Basenor",
+          "https://www.basenor.com/blogs/news/grok-rolls-out-across-all-of-europe-xai-expands-continent-wide"
+        ]
+      ]
+    },
+    {
+      "co": "Microsoft",
+      "name": "Windows Recall",
+      "what": "Searchable photographic memory of everything you've done on a Copilot+ PC. The EEA got it months later, with an EU-only export feature.",
+      "launched": "2025-04-25",
+      "arrived": "2025-10-15",
+      "approx2": true,
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA / GDPR",
+      "cite": "inferred",
+      "src": [
+        [
+          "Guru3D",
+          "https://www.guru3d.com/story/eu-users-to-wait-for-microsofts-controversial-recall-feature-until-late-2025/"
+        ],
+        [
+          "ITdaily",
+          "https://itdaily.com/news/software/windows-recall-available-europe"
+        ]
+      ]
+    },
+    {
+      "co": "Meta",
+      "name": "Threads",
+      "what": "Meta's text-based social app. It had 100 million sign-ups worldwide before people in the EU could even download it.",
+      "launched": "2023-07-05",
+      "arrived": "2023-12-14",
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "DMA / GDPR",
+      "cite": "stated",
+      "src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2023/12/14/threads-is-finally-available-to-users-in-the-eu"
+        ],
+        [
+          "MacRumors",
+          "https://macrumors.com/2023/12/14/threads-launches-in-the-eu"
+        ]
+      ]
+    },
+    {
+      "co": "Google",
+      "name": "Bard",
+      "what": "Google's first chatbot, the predecessor of Gemini. It went live in 180 countries before the EU.",
+      "launched": "2023-03-21",
+      "arrived": "2023-07-13",
+      "status": "late",
+      "regions": [
+        "EU"
+      ],
+      "rule": "GDPR",
+      "cite": "stated",
+      "src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2023/07/13/googles-bard-finally-lands-in-the-eu-now-supports-more-than-40-languages/"
+        ],
+        [
+          "RTÉ",
+          "https://www.rte.ie/news/2023/0713/1394274-google-ai-bard"
+        ]
+      ]
+    }
+  ]
+}
