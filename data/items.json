@@ -2,6 +2,30 @@
   "updated": "2026-11-11",
   "items": [
     {
+      "co": "Binance",
+      "name": "Binance exchange",
+      "what": "The world's largest crypto exchange is closing customer accounts in France, Spain, Italy and Poland on 31 December, after failing to get an EU crypto licence before the transition period ended. Leftover balances are charged a monthly fee from 29 November.",
+      "launched": "2017-07-14",
+      "arrived": null,
+      "removed": "2026-12-31",
+      "status": "removed",
+      "regions": [
+        "EU"
+      ],
+      "rule": "MiCA",
+      "cite": "inferred",
+      "src": [
+        [
+          "crypto.news",
+          "https://crypto.news/binance-europe-account-closures-december-31-mica/"
+        ],
+        [
+          "FinTelegram",
+          "https://fintelegram.com/the-binance-exit-europe-moves-from-mica-rejection-to-market-enforcement/"
+        ]
+      ]
+    },
+    {
       "co": "Apple",
       "name": "Siri AI",
       "what": "The new LLM-powered Siri app, upgraded Visual Intelligence and Writing Tools on iPhone and iPad. EU developers can't use the APIs either.",
