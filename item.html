@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>antitech.eu: the tech Europe doesn't get</title>
+<meta name="description" content="Why this feature launched elsewhere and stopped at Europe's border, the rule behind it, and who to write to about it.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="antitech.eu">
+<meta property="og:image" content="https://www.antitech.eu/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.antitech.eu/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ECE7DC; --paper-2:#E3DDCF; --ink:#121110; --mute:#6B665C; --line:#121110;
+    --signal:#003399; --star:#FFCC00; --ok:#1F5C3A;
+    --mono:"IBM Plex Mono", ui-monospace, monospace;
+    --sans:"Archivo", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--paper);color:var(--ink)}
+  body{font-family:var(--sans);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .mono{font-family:var(--mono)}
+
+  /* top bar */
+  .top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 28px;
+    background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+  .top a{text-decoration:none;padding:9px 0;display:inline-block}
+  .top a:hover{color:var(--star)}
+  .top .brand b{color:var(--star);font-weight:600}
+
+  /* masthead */
+  header{padding:28px 28px 0;border-bottom:1px solid var(--line)}
+  .row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--mono);
+    font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+  .status{padding:3px 7px;border:1px solid var(--ink);font-size:11.5px;letter-spacing:.08em}
+  .status.missing{background:var(--signal);border-color:var(--signal);color:#fff}
+  .status.removed{background:var(--ink);color:var(--paper)}
+  .status.late{color:var(--ok);border-color:var(--ok)}
+  .status.partial{border-style:dashed}
+  h1{font-variation-settings:"wdth" 62;font-weight:900;font-size:clamp(56px,10vw,150px);line-height:.85;
+    letter-spacing:-.02em;text-transform:uppercase;margin:14px 0 0 -4px}
+  .lede{display:grid;grid-template-columns:minmax(0,620px) 1fr;gap:28px;align-items:end;
+    padding:22px 0 26px;border-top:1px solid var(--line);margin-top:18px}
+  .lede p{font-size:19px;line-height:1.35;font-variation-settings:"wdth" 90}
+  .count{display:flex;align-items:baseline;gap:10px;justify-content:flex-end}
+  .count .n{font-variation-settings:"wdth" 62;font-weight:900;font-size:110px;line-height:.82;
+    font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .missing-page .count .n{color:var(--signal)}
+  .count .u{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;line-height:1.35;color:var(--mute)}
+  .facts{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px}
+  .facts > div{padding:12px 18px 12px 0;margin-right:18px;border-right:1px solid var(--line)}
+  .facts > div:last-child{border-right:0}
+  .facts span{display:block;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-bottom:3px}
+  .regions i{font-style:normal;font-weight:600;padding:2px 5px;background:var(--ink);color:var(--paper);letter-spacing:.04em;margin-right:4px}
+
+  /* body sections */
+  section{display:grid;grid-template-columns:260px minmax(0,720px);gap:28px;padding:28px;border-bottom:1px solid var(--line)}
+  section > h2{font-family:var(--mono);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+  section > h2 small{display:block;font-weight:400;color:var(--mute);margin-top:6px;letter-spacing:.06em;text-transform:none;font-size:12px}
+  .prose p{font-size:16.5px;line-height:1.55;color:#2b2925}
+  .prose p + p{margin-top:14px}
+  .prose h3{font-variation-settings:"wdth" 72;font-weight:800;font-size:28px;line-height:1;text-transform:uppercase;margin-bottom:10px}
+  .prose .law + .law{margin-top:28px;padding-top:24px;border-top:1px dashed var(--line)}
+  .links{list-style:none;margin-top:12px;font-family:var(--mono);font-size:12.5px;line-height:1.9}
+  .links a{text-underline-offset:2px}
+  .links a:hover{color:var(--signal)}
+  ul.src{list-style:none;font-family:var(--mono);font-size:13px;line-height:1.5}
+  ul.src li{padding:8px 0;border-bottom:1px solid rgba(18,17,16,.15)}
+  ul.src li:last-child{border-bottom:0}
+  ul.src a{text-underline-offset:2px;word-break:break-word}
+  ul.src a:hover{color:var(--signal)}
+  ul.src span{color:var(--mute)}
+  .note{font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:12px}
+
+  /* contacts */
+  .people{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .person{padding:14px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
+  .person .who{font-variation-settings:"wdth" 80;font-weight:800;font-size:20px;line-height:1.05;text-transform:uppercase}
+  .person .meta{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-top:4px}
+  .person .role{font-size:14px;margin-top:8px;color:#2b2925}
+  .person .contact{font-family:var(--mono);font-size:12px;margin-top:10px;display:grid;gap:3px}
+  .person .contact a{text-underline-offset:2px;word-break:break-all}
+  .own{margin-top:18px;font-size:15px}
+  .own a{font-weight:600}
+  .draft{margin-top:22px}
+  .draft label{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:8px}
+  .draft textarea{width:100%;min-height:380px;padding:16px;font-family:var(--mono);font-size:13px;line-height:1.55;
+    background:#F6F2EA;color:var(--ink);border:1px solid var(--line);resize:vertical}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .btn{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;cursor:pointer;
+    padding:12px 16px;background:var(--ink);color:var(--paper);border:1px solid var(--ink)}
+  .btn:hover{background:var(--signal);border-color:var(--signal)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+  footer{padding:28px;font-family:var(--mono);font-size:12px;color:var(--mute)}
+  footer a{color:var(--ink)}
+  .empty{padding:80px 28px;font-family:var(--mono)}
+
+  @media (max-width:760px){
+    .top{padding:0 16px}
+    header{padding:20px 16px 0}
+    .lede{grid-template-columns:1fr}
+    .count{justify-content:flex-start}
+    .count .n{font-size:80px}
+    section{grid-template-columns:1fr;gap:14px;padding:22px 16px}
+    footer{padding:22px 16px}
+  }
+</style>
+<script defer src="/stats/script.js" data-website-id="0db22b3b-f31e-4eb3-b6e3-dd82995d69ca" data-host-url="/stats" data-domains="antitech.eu,www.antitech.eu"></script>
+</head>
+<body>
+
+<nav class="top"><a href="/">← All entries</a><a class="brand" href="/">antitech<b>.eu</b></a></nav>
+<div id="page"></div>
+<footer>antitech.eu · <a href="/">Back to all entries</a> · Corrections welcome. Every entry links its sources.</footer>
+
+<script>
+const DAY = 86400000;
+const today = new Date(); today.setHours(0,0,0,0);
+const d = s => new Date(s+"T00:00:00");
+const fmt = n => n.toLocaleString("en-GB");
+const fmtDate = s => d(s).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const STATUS_LABEL = {missing:"Not available", removed:"Removed", late:"Arrived late", partial:"Partial"};
+const REGION = {EU:"the EU", UK:"the UK", CH:"Switzerland"};
+const FIND_MEP = "https://www.europarl.europa.eu/meps/en/full-list";
+
+const days = it => it.status === "removed"
+  ? Math.round((today - d(it.launched))/DAY)
+  : Math.max(0, Math.round(((it.arrived ? d(it.arrived) : today) - d(it.launched)) / DAY));
+
+function unitText(it){
+  const a = it.approx ? "~" : "";
+  if (it.status === "removed") return `days since launch<br>removed ${esc(fmtDate(it.removed))}`;
+  if (!it.arrived) return `days and counting<br>since ${a}${esc(fmtDate(it.launched))}`;
+  return `days late<br>${a}${esc(fmtDate(it.launched))} → ${it.approx2?"~":""}${esc(fmtDate(it.arrived))}`;
+}
+
+const listJoin = a => a.length < 2 ? a.join("") : a.slice(0,-1).join(", ") + " and " + a[a.length-1];
+
+function statusSentence(it){
+  const where = listJoin(it.regions.map(r => REGION[r] || r));
+  const a = it.approx ? "around " : "";
+  if (it.status === "removed") return d(it.removed) > today
+    ? `It is being withdrawn on ${fmtDate(it.removed)}.`
+    : `${it.co} withdrew it in ${where} on ${fmtDate(it.removed)}.`;
+  if (it.status === "missing") return `It launched outside Europe ${a || "on "}${fmtDate(it.launched)} and is still not available in ${where}.`;
+  if (it.status === "partial") return `It launched outside Europe ${a || "on "}${fmtDate(it.launched)}, and is still only partly available in ${where}.`;
+  return `It reached ${where} ${fmt(days(it))} days after it launched elsewhere.`;
+}
+
+function draftEmail(it, laws){
+  const names = listJoin(laws.map(l => l.short));
+  const cause = it.cite === "stated"
+    ? `${it.co} has said the ${names} is the reason.`
+    : `${it.co} hasn't named a rule, but press reports link it to the ${names}.`;
+  return `Subject: ${it.co} ${it.name} and the ${names}
+
+Dear Member of the European Parliament,
+
+I'm writing as a resident of [your country] about ${it.co}'s ${it.name}. ${statusSentence(it)} ${cause}
+
+I understand what the ${names} ${laws.length > 1 ? "set out" : "sets out"} to protect. But people in Europe keep getting new technology later than everyone else, or not at all, and it's rarely clear who benefits from that.
+
+I would ask you to:
+- look at whether the ${names} ${laws.length > 1 ? "are" : "is"} being applied in a way that keeps useful features from European users,
+- push for clear, timely guidance so companies can launch here at the same time as elsewhere, and
+- weigh these effects in any review or simplification of the rules.
+
+Thank you for your time.
+
+Kind regards,
+[Your name]
+[Your town, country]`;
+}
+
+function render(it, LAWS){
+  const keys = it.rule.split(" / ").map(s => s.trim());
+  const laws = keys.map(k => ({key:k, short:k, ...(LAWS[k] || {full:k, summary:"", links:[], eu:false, contacts:[]})}));
+  const euLaws = laws.filter(l => l.eu);
+  const contacts = [];
+  euLaws.forEach(l => (l.contacts||[]).forEach(c => { if (!contacts.find(x => x.name === c.name)) contacts.push({...c, law:l.short}); }));
+  const srcs = [];
+  [...it.src, ...(it.impact_src||[])].forEach(([t,u]) => { if (!srcs.find(s => s[1] === u)) srcs.push([t,u]); });
+  const isMissing = it.status === "missing" || it.status === "removed";
+
+  document.title = `${it.co} ${it.name}: why Europe doesn't get it | antitech.eu`;
+  document.querySelector('meta[name="description"]').content = it.what;
+
+  const mails = contacts.map(c => c.email).filter(Boolean);
+  const draft = euLaws.length ? draftEmail(it, euLaws) : "";
+
+  document.getElementById("page").innerHTML = `
+  <div class="${isMissing ? "missing-page" : ""}">
+  <header>
+    <div class="row"><span>${esc(it.co)}</span><span class="status ${it.status}">${STATUS_LABEL[it.status]}</span></div>
+    <h1>${esc(it.name)}</h1>
+    <div class="lede">
+      <p>${esc(it.what)}</p>
+      <div class="count"><span class="n">${fmt(days(it))}</span><span class="u">${unitText(it)}</span></div>
+    </div>
+    <div class="facts">
+      <div><span>Held back by</span><b>${esc(it.rule)}</b></div>
+      <div><span>Unavailable in</span><span class="regions">${it.regions.map(r=>`<i>${esc(r)}</i>`).join("")}</span></div>
+      <div><span>Reason</span>${it.cite === "stated" ? "● Stated by the company" : "○ Inferred from press reports"}</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The rule</h2>
+    <div class="prose">${laws.map(l => `<div class="law">
+      <h3>${esc(l.short)}</h3>
+      ${l.full && l.full !== l.short ? `<div class="note" style="margin:-4px 0 10px">${esc(l.full)}</div>` : ""}
+      <p>${esc(l.summary || "No summary yet.")}</p>
+      ${(l.links||[]).length ? `<ul class="links">${l.links.map(([t,u])=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a></li>`).join("")}</ul>` : ""}
+    </div>`).join("")}</div>
+  </section>
+
+  <section>
+    <h2>What happened to ${esc(it.name)}</h2>
+    <div class="prose"><p>${esc(it.impact || it.what)}</p></div>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ul class="src">${srcs.map(([t,u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a> <span>· ${esc(new URL(u).hostname.replace(/^www\./,""))}</span></li>`).join("")}</ul>
+  </section>
+
+  ${euLaws.length ? `<section>
+    <h2>Write to your MEPs<small>Members of the European Parliament can push for changes to how the ${esc(listJoin(euLaws.map(l=>l.short)))} ${euLaws.length>1?"are":"is"} written and applied.</small></h2>
+    <div>
+      ${contacts.length ? `<p class="prose" style="font-size:15px;margin-bottom:14px">These MEPs led Parliament's work on the ${esc(listJoin([...new Set(contacts.map(c=>c.law))]))} and are still in office.</p>
+      <div class="people">${contacts.map(c => `<div class="person">
+        <div class="who">${esc(c.name)}</div>
+        <div class="meta">${esc([c.group, c.country].filter(Boolean).join(" · "))}</div>
+        <div class="role">${esc(c.role)}</div>
+        <div class="contact">
+          ${c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ""}
+          ${c.profile ? `<a href="${esc(c.profile)}" target="_blank" rel="noopener">Official profile ↗</a>` : ""}
+        </div>
+      </div>`).join("")}</div>` : ""}
+      <p class="own">The MEPs elected in your own country are often the ones most likely to listen. <a href="${FIND_MEP}" target="_blank" rel="noopener">Find your MEPs on the European Parliament site ↗</a></p>
+      <div class="draft">
+        <label for="draft">Draft email. Edit it before you send it.</label>
+        <textarea id="draft" spellcheck="true"></textarea>
+        <div class="btns">
+          <button class="btn" id="copy" type="button">Copy email</button>
+          ${mails.length ? `<a class="btn ghost" id="mailto" href="#">Open in your email app</a>` : ""}
+        </div>
+        <p class="note">Keep it polite and in your own words: personal emails get read, copy-paste campaigns get filtered.</p>
+      </div>
+    </div>
+  </section>` : ""}
+  </div>`;
+
+  if (draft){
+    const ta = document.getElementById("draft");
+    ta.value = draft;
+    document.getElementById("copy").onclick = async (e) => {
+      try { await navigator.clipboard.writeText(ta.value); } catch { ta.select(); document.execCommand("copy"); }
+      e.target.textContent = "Copied"; setTimeout(()=> e.target.textContent = "Copy email", 1800);
+    };
+    const m = document.getElementById("mailto");
+    if (m) m.onclick = (e) => {
+      e.preventDefault();
+      const [first, ...rest] = ta.value.split("\n");
+      const subject = first.replace(/^Subject:\s*/,"");
+      location.href = `mailto:${mails.join(",")}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(rest.join("\n").replace(/^\n+/,""))}`;
+    };
+  }
+}
+
+const slug = (location.pathname.match(/^\/item\/([a-z0-9-]+)/) || [])[1] || new URLSearchParams(location.search).get("id");
+Promise.all([
+  fetch("/data/items.json", {cache:"no-cache"}).then(r=>r.json()),
+  fetch("/data/laws.json", {cache:"no-cache"}).then(r=>r.json()),
+]).then(([data, laws]) => {
+  const it = data.items.find(i => i.slug === slug);
+  if (!it){
+    document.title = "Not found | antitech.eu";
+    document.getElementById("page").innerHTML = `<div class="empty">No entry called “${esc(slug||"")}”. <a href="/">See all entries</a>.</div>`;
+    return;
+  }
+  render(it, laws);
+});
+</script>
+</body>
+</html>

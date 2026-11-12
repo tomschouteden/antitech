@@ -82,6 +82,10 @@
     padding:18px 20px 16px;display:flex;flex-direction:column;min-height:400px;background:var(--paper);
     transition:background .15s}
   .tile:hover{background:#F3EFE6}
+  .tile h2 a.more{text-decoration:none}
+  .tile h2 a.more::after{content:"";position:absolute;inset:0;z-index:1}
+  .tile:hover h2 a.more{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
+  .tile .src a{position:relative;z-index:2}
   .tile.missing::before{content:"";position:absolute;inset:0;pointer-events:none;
     background:repeating-linear-gradient(-45deg,transparent 0 11px,rgba(18,17,16,.045) 11px 12px)}
   .row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--mono);
@@ -233,7 +237,7 @@ function tile(it, i){
   return `<article class="tile ${it.status === "missing" || it.status === "removed" ? "missing" : ""}">
     <div class="row"><span class="idx">№ ${String(i+1).padStart(2,"0")}</span><span class="status ${it.status}">${STATUS_LABEL[it.status]}</span></div>
     <div class="co">${it.co}</div>
-    <h2>${it.name}</h2>
+    <h2><a class="more" href="/item/${it.slug}">${it.name}</a></h2>
     <p class="what">${it.what}</p>
     <div class="count"><span class="n">${fmt(n)}</span><span class="u">${unitText(it)}</span></div>
     <div class="foot">

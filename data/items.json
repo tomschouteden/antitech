@@ -2,6 +2,7 @@
   "updated": "2026-11-11",
   "items": [
     {
+      "slug": "binance-exchange",
       "co": "Binance",
       "name": "Binance exchange",
       "what": "The world's largest crypto exchange is closing customer accounts in France, Spain, Italy and Poland on 31 December, after failing to get an EU crypto licence before the transition period ended. Leftover balances are charged a monthly fee from 29 November.",
@@ -23,9 +24,21 @@
           "FinTelegram",
           "https://fintelegram.com/the-binance-exit-europe-moves-from-mica-rejection-to-market-enforcement/"
         ]
+      ],
+      "impact": "Binance did not obtain a MiCA authorisation before the transition period ended on 1 July 2026. In June it withdrew its MiCA application in Greece, citing \"the timeline of the process\", and restricted services in France, Spain, Italy and Poland from 1 July; its French registration lapsed on 2 July. In November a spokesperson confirmed that \"affected accounts will be closed with effect from 31 December 2026\". Deposits are blocked, withdrawals remain open, and a monthly fee applies to remaining crypto balances from 29 November. Binance says it is still pursuing a licence, reportedly through France, but it is not listed in ESMA's register of authorised providers.",
+      "impact_src": [
+        [
+          "Fintech News Switzerland",
+          "https://fintechnews.ch/?p=86925"
+        ],
+        [
+          "Unchained",
+          "https://unchainedcrypto.com/binance-suspends-eu-services-by-july-1-after-failing-to-secure-mica-license/"
+        ]
       ]
     },
     {
+      "slug": "apple-siri-ai",
       "co": "Apple",
       "name": "Siri AI",
       "what": "The new LLM-powered Siri app, upgraded Visual Intelligence and Writing Tools on iPhone and iPad. EU developers can't use the APIs either.",
@@ -47,9 +60,17 @@
           "MacRumors",
           "https://macrumors.com/2026/06/08/siri-ai-not-available-eu-china"
         ]
+      ],
+      "impact": "Apple announced at WWDC on 8 June 2026 that it \"will not be able to ship Siri AI in the European Union with the release of iOS 27 and iPadOS 27\", naming the Digital Markets Act. It says the Commission's reading of the DMA would require giving any virtual assistant direct access to users' private data, and that regulators rejected its proposed \"Trusted System Agent\" intermediary and an 18-month phased rollout. Craig Federighi blamed regulators' \"refusal to engage constructively on solutions that preserve privacy and security\". EU users can still use Siri AI on macOS 27 and visionOS 27, but not on iPhone, iPad or Apple Watch, and EU-based developers cannot test or use the new Siri AI features in their apps on those platforms. Apple says there is no timeline for an EU release on iOS and iPadOS.",
+      "impact_src": [
+        [
+          "Apple Newsroom",
+          "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/"
+        ]
       ]
     },
     {
+      "slug": "meta-muse",
       "co": "Meta",
       "name": "Muse",
       "what": "Meta's AI agent that does tasks for you across apps and WhatsApp. Launched in the US, then Canada, Japan and Singapore.",
@@ -72,9 +93,17 @@
           "Notebookcheck",
           "https://www.notebookcheck.com/Meta-Muse-kommt-aufs-iPad-nach-Deutschland-aber-weiterhin-nicht.1419095.0.html"
         ]
+      ],
+      "impact": "Meta launched Muse, its AI agent that carries out tasks such as sending emails, booking travel and shopping, in the US on 8 September 2026. It reached Canada on 18 September and Singapore in late October. Users in Germany and the rest of Europe see a message that the service is not available in their country, and the block is tied to the account rather than the IP address. Meta has not explained the exclusion or given a European timeline. The link to regulation comes from press reporting, which points to the GDPR rules on profiling and automated decisions and to the AI Act's transparency obligations.",
+      "impact_src": [
+        [
+          "Social Media Today",
+          "https://www.socialmediatoday.com/news/metas-muse-ai-agents-are-now-available-to-users-in-singapore/873131"
+        ]
       ]
     },
     {
+      "slug": "openai-dots",
       "co": "OpenAI",
       "name": "Dots",
       "what": "ChatGPT's new agent feature, unveiled at DevDay. OpenAI says it is still talking to regulators about Europe.",
@@ -97,9 +126,17 @@
           "DataNorth",
           "https://datanorth.ai/nl/nieuws/chatgpt-dots-berichten-imessage-rcs"
         ]
+      ],
+      "impact": "OpenAI launched dots, always-on ChatGPT agents with their own cloud computer and browser, on 29 September 2026. Its release notes excluded Pro users in the EEA, Switzerland and the UK, without giving a reason. Business Premium workspaces can use dots in all supported regions, including Europe. At OpenAI's Berlin event on 28 October, Romain Huet said dots should become more widely available in Europe \"in a few weeks\", pending talks with regulators, according to The Decoder. As of 12 November no European rollout for personal accounts has been reported.",
+      "impact_src": [
+        [
+          "MIXED",
+          "https://mixed-news.com/en/openai-chatgpt-dots-exclude-pro-eea-switzerland-uk/"
+        ]
       ]
     },
     {
+      "slug": "google-gemini-personal-intelligence",
       "co": "Google",
       "name": "Gemini Personal Intelligence",
       "what": "Gemini draws on your Gmail, Photos and other Google apps to give personal answers. Available worldwide to paid users, except in Europe.",
@@ -122,9 +159,17 @@
           "NewsBytes",
           "https://www.newsbytesapp.com/news/science/google-launches-personal-intelligence-for-gemini-excluding-eea-switzerland-uk/tldr"
         ]
+      ],
+      "impact": "Google launched Personal Intelligence, which lets Gemini draw on Gmail, Google Photos and other Google apps, in the US in March 2026. On 14 April it rolled out worldwide to AI Plus, Pro and Ultra subscribers, except in the EEA, Switzerland and the UK, which were excluded \"for now\". Google gave no reason and no date for those regions. The link to regulation comes from press reporting. As of November 2026 Google has not announced a launch in the excluded regions.",
+      "impact_src": [
+        [
+          "9to5Google",
+          "https://9to5google.com/2026/04/14/gemini-personal-intelligence-global/"
+        ]
       ]
     },
     {
+      "slug": "tesla-fsd-supervised",
       "co": "Tesla",
       "name": "FSD (Supervised)",
       "what": "Tesla's driver-assist that steers through city streets. The Netherlands approved it in April 2026, and a few countries followed. The EU-wide vote is still pending.",
@@ -146,9 +191,21 @@
           "InsideEVs",
           "https://insideevs.com/news/779890/tesla-fsd-europe-approval-2026-netherlands/"
         ]
+      ],
+      "impact": "In Europe, driver-assistance features need type approval before they can be used on public roads, so Tesla could not switch on FSD (Supervised) as it did in the US. The Dutch regulator RDW approved it on 10 April 2026 under UN Regulation 171, after months of delays. Other countries then recognised the Dutch approval one by one. By mid-October 2026 nine had done so: the Netherlands, Lithuania, Estonia, Denmark, Belgium, Slovenia, Czechia, Croatia and Slovakia. Tesla has since renamed the feature Tesla Assisted Driving in Europe. An EU-wide vote in the Technical Committee on Motor Vehicles was pushed back from October to December 2026. France and Sweden oppose the speed-offset function, and Germany, France and the UK have not approved it.",
+      "impact_src": [
+        [
+          "Not a Tesla App",
+          "https://notateslaapp.com/news/4838/slovakia-becomes-9th-european-country-to-approve-tesla-fsd"
+        ],
+        [
+          "Not a Tesla App",
+          "https://www.notateslaapp.com/news/4749/germany-says-it-is-open-to-tesla-fsd-approval-confirms-eu-wide-vote-in-december"
+        ]
       ]
     },
     {
+      "slug": "waymo-robotaxis",
       "co": "Waymo · Baidu · Zoox",
       "name": "Robotaxis",
       "what": "Fully driverless ride-hailing, available to the public in US and Chinese cities. No commercial service anywhere in the EU yet. Waymo is aiming for London.",
@@ -170,9 +227,21 @@
           "Engadget",
           "https://engadget.com/transportation/evs/waymo-plans-to-launch-fully-autonomous-taxi-service-in-london-next-year-142453250.html"
         ]
+      ],
+      "impact": "Waymo, Baidu and Zoox run driverless ride-hailing in the US or China, but no commercial driverless service operates in the EU, and Europe has no framework for approving one. The UK is the furthest along: Waymo announced London plans in October 2025 and began autonomous testing with safety drivers in about 100 vehicles in April 2026, saying the government must first finalise its pilot regulations. It had aimed for a public launch as soon as September. In August 2026 the Evening Standard reported that the rollout was delayed because Transport for London had not yet published the guidance operators need for approval. Waymo said it was \"working through the safety approval process\" and still aimed for a fully autonomous service by the end of 2026, but would not confirm paid public rides.",
+      "impact_src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/"
+        ],
+        [
+          "Evening Standard (via Yahoo News)",
+          "https://ca.news.yahoo.com/london-rollout-robotaxis-delayed-amid-082955427.html"
+        ]
       ]
     },
     {
+      "slug": "apple-advanced-data-protection",
       "co": "Apple",
       "name": "Advanced Data Protection",
       "what": "End-to-end encryption for iCloud backups, photos and notes. Apple pulled it in the UK rather than build a government backdoor.",
@@ -194,9 +263,17 @@
           "Silicon UK",
           "https://silicon.co.uk/e-regulation/surveillance/apple-withdraws-advanced-data-protection-for-uk-after-government-order-600818"
         ]
+      ],
+      "impact": "On 21 February 2025 Apple stopped offering Advanced Data Protection, its end-to-end encryption for iCloud, to UK users. This followed reports that the Home Office had served a technical capability notice under the Investigatory Powers Act demanding access to encrypted iCloud data. Apple said it was \"gravely disappointed\" and that \"we have never built a backdoor or master key to any of our products or services and we never will.\" Existing UK users had to turn the feature off manually. The broader notice was reportedly withdrawn after US objections, but in 2026 the Home Office reportedly issued a new notice covering only British users, which Apple challenged at the Investigatory Powers Tribunal in July 2026. Advanced Data Protection is still unavailable in the UK.",
+      "impact_src": [
+        [
+          "IBTimes UK",
+          "https://www.ibtimes.co.uk/apple-challenges-uk-government-encrypted-icloud-backups-1812405"
+        ]
       ]
     },
     {
+      "slug": "apple-iphone-mirroring",
       "co": "Apple",
       "name": "iPhone Mirroring",
       "what": "Control your iPhone from your Mac, notifications included. Still disabled in the EU, along with SharePlay screen sharing.",
@@ -217,9 +294,17 @@
           "Thurrott",
           "https://www.thurrott.com/mobile/322784/apple-to-delay-some-ios-26-features-in-the-eu-over-dma-compliance-concerns"
         ]
+      ],
+      "impact": "Apple has not enabled iPhone Mirroring, which lets a Mac show and control a connected iPhone, in the EU since it launched with macOS Sequoia in 2024. It also left out related features such as iPhone Live Activities in the Mac menu bar and remote control during FaceTime. Apple named the Digital Markets Act. At a Commission workshop in June 2025 its lawyer Kyle Andeer said the interoperability rules create \"real privacy, security, safety risks\". In September 2025 Apple said its teams \"still have not found a secure way to bring this feature to non-Apple devices\", so \"we have not been able to bring the feature to the EU.\" No EU launch has been reported since.",
+      "impact_src": [
+        [
+          "Apple Newsroom",
+          "https://www.apple.com/newsroom/2025/09/the-digital-markets-acts-impacts-on-eu-users/"
+        ]
       ]
     },
     {
+      "slug": "apple-watch-wi-fi-sync",
       "co": "Apple",
       "name": "Watch Wi-Fi Sync",
       "what": "Your Apple Watch used to pick up the Wi-Fi networks your iPhone knows. Apple switched this off in the EU rather than open it to third-party accessories.",
@@ -238,9 +323,21 @@
           "AppleInsider",
           "https://appleinsider.com/articles/25/11/05/apple-plans-to-remove-wi-fi-network-syncing-on-apple-watch-in-the-eu"
         ]
+      ],
+      "impact": "The Commission's March 2025 DMA interoperability decision requires Apple to give third-party accessories the same access to iPhone Wi-Fi features as its own devices. Apple appealed the decision. In November 2025 it told Numerama it would \"disable Wi-Fi synchronization between an iPhone and an Apple Watch in Europe\". Daring Fireball's analysis of iOS and watchOS 26.2, which shipped in December 2025, found a narrower change: an Apple Watch set up or reset in the EU no longer receives the iPhone's list of previously saved networks, though networks joined later still sync. Apple added an EU-only framework that lets third-party accessories receive Wi-Fi credentials. Apple has warned that such access could expose complete Wi-Fi network histories to other companies.",
+      "impact_src": [
+        [
+          "MacRumors",
+          "https://www.macrumors.com/2025/11/06/iphone-apple-watch-wi-fi-sync-eu-ios/"
+        ],
+        [
+          "Daring Fireball",
+          "https://daringfireball.net/2025/11/apple_eu_dma_iphone_accessories_wi-fi_sync"
+        ]
       ]
     },
     {
+      "slug": "apple-maps-visited-places",
       "co": "Apple",
       "name": "Maps Visited Places",
       "what": "Apple Maps remembers places you've been and learns your preferred routes. Part of iOS 26 everywhere except the EU.",
@@ -257,9 +354,25 @@
           "heise",
           "https://heise.de/-10465309"
         ]
+      ],
+      "impact": "Apple launched Visited Places and Preferred Routes in Apple Maps with iOS 26 but did not offer them on devices in the EU. In September 2025 Apple named the Digital Markets Act, saying its teams \"haven't found a way to share these capabilities with other developers without exposing our users' locations\". It said the European Commission had rejected its proposed changes. The features work in places such as the US, the UK and Switzerland, but are not offered at all on EU devices. Apple said iOS 27 brings Visited Places to more regions, but no report confirms the EU is among them, so as of November 2026 it remains unavailable there.",
+      "impact_src": [
+        [
+          "Apple Newsroom",
+          "https://www.apple.com/newsroom/2025/09/the-digital-markets-acts-impacts-on-eu-users/"
+        ],
+        [
+          "heise online",
+          "https://heise.de/-11077230"
+        ],
+        [
+          "9to5Mac",
+          "https://9to5mac.com/2026/08/10/heres-everything-new-for-apple-maps-in-ios-27/"
+        ]
       ]
     },
     {
+      "slug": "meta-ai",
       "co": "Meta",
       "name": "Meta AI",
       "what": "Meta's assistant in WhatsApp, Instagram and Messenger. It reached the EU 18 months late and text-only, without image generation or multimodal features.",
@@ -280,9 +393,17 @@
           "The Decoder",
           "https://the-decoder.com/meta-launches-ai-assistant-in-eu-with-limited-features/"
         ]
+      ],
+      "impact": "Meta paused its plan to train AI on EU users' public posts in June 2024 after the Irish Data Protection Commission questioned its legal basis under the GDPR. Meta AI reached the EU only in March 2025, about 18 months after the US launch, as a text-only chat assistant. Meta said that model \"wasn't trained on first-party data from users in the EU\", and it withheld image generation, image editing and its multimodal model, citing the regulatory environment. The DPC let Meta start training on adult users' public posts from 27 May 2025, with an objection form and other safeguards. Meta has said it aims for parity with the US, but no confirmed report shows the image features have reached the EU as of November 2026.",
+      "impact_src": [
+        [
+          "Data Protection Commission",
+          "https://www.dataprotection.ie/news-media/latest-news/dpc-statement-meta-ai"
+        ]
       ]
     },
     {
+      "slug": "meta-ray-ban-meta-ai",
       "co": "Meta",
       "name": "Ray-Ban Meta AI",
       "what": "Ask your glasses what you're looking at. The AI assistant reached EU wearers about a year after the US, and the camera features came last.",
@@ -305,9 +426,11 @@
           "TechCrunch",
           "https://techcrunch.com/?p=2916809"
         ]
-      ]
+      ],
+      "impact": "Ray-Ban Meta glasses went on sale in Europe in 2023 without Meta AI. In November 2024 Meta brought voice-only Meta AI to France, Italy, Ireland and Spain, saying it had been working \"to ensure that Ray-Ban Meta glasses comply with Europe's complex regulatory system\". The multimodal features, which answer questions about what the camera sees, stayed limited to the US, Canada and Australia. In April 2025 Meta added Germany, Austria, Belgium, Denmark, Norway, Sweden and Finland and began rolling out visual questions in supported EU countries. Meta did not name a specific rule, and the link to the GDPR comes from press reporting on its paused AI training in the EU."
     },
     {
+      "slug": "google-ai-overviews-ai-mode",
       "co": "Google",
       "name": "AI Overviews & AI Mode",
       "what": "AI-written answers at the top of Google Search. Rolled out in the EU late and only partly. France is still waiting.",
@@ -329,9 +452,25 @@
           "La Réclame",
           "https://lareclame.fr/google-ai-mode-europe-324203"
         ]
+      ],
+      "impact": "Google brought AI Overviews to only eight EU countries and Switzerland in March 2025, and a senior executive pointed to regulatory uncertainty from EU tech rules, including the AI Act, DSA and DMA. AI Mode followed in many European countries in October 2025. France waited longest. French press linked this to its neighbouring-rights rules for press publishers and to commitments Google made when it was fined €250 million in 2024. After a compromise with publishers, Google launched both features in France on 22 July 2026.",
+      "impact_src": [
+        [
+          "Google",
+          "https://blog.google/products-and-platforms/products/search/ai-mode-expands-languages-locations/"
+        ],
+        [
+          "Blog du Modérateur",
+          "https://blogdumoderateur.com/google-deploie-ai-overviews-ai-mode-france"
+        ],
+        [
+          "PPC Land",
+          "https://ppc.land/google-ends-france-ai-overviews-blackout-as-68-users-flagged-the-gap"
+        ]
       ]
     },
     {
+      "slug": "apple-intelligence",
       "co": "Apple",
       "name": "Apple Intelligence",
       "what": "Apple's on-device AI: Writing Tools, notification summaries and Genmoji. It reached the EU with iOS 18.4, five months after the US.",
@@ -348,9 +487,25 @@
           "AppleInsider",
           "https://appleinsider.com/articles/26/06/08/siri-ai-new-apple-intelligence-not-coming-to-eu-right-away-thanks-to-dma"
         ]
+      ],
+      "impact": "In June 2024 Apple said Apple Intelligence would not reach EU users that year \"due to the regulatory uncertainties brought about by the Digital Markets Act\". It arrived on EU iPhones and iPads with iOS 18.4 on 31 March 2025. The pattern repeated in June 2026, when Apple said the new Siri AI would not launch on iPhone or iPad in the EU with iOS 27 and gave no timeline. Apple said the Commission had rejected its proposals, including an 18-month gradual rollout, while a Commission spokesman said the choice was Apple's. EU users keep existing Apple Intelligence features and get Siri AI on macOS 27 and visionOS 27.",
+      "impact_src": [
+        [
+          "MacRumors",
+          "https://www.macrumors.com/2024/06/21/apple-intelligence-europe-delay/"
+        ],
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2025/03/31/apple-rolls-out-priority-notifications-as-apple-intelligence-expands-to-eu"
+        ],
+        [
+          "Apple Newsroom",
+          "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/"
+        ]
       ]
     },
     {
+      "slug": "apple-airpods-live-translation",
       "co": "Apple",
       "name": "AirPods Live Translation",
       "what": "Real-time translated conversation through your AirPods. Held back in the EU at the iOS 26 launch, then arrived with iOS 26.2.",
@@ -368,9 +523,21 @@
           "MacRumors",
           "https://www.macrumors.com/2025/11/04/ios-26-2-expands-live-translation-on-airpods-to-eu/"
         ]
+      ],
+      "impact": "Apple launched Live Translation on AirPods with iOS 26 in September 2025 but held it back in the EU, saying it needed more time to comply with the Digital Markets Act. In its September 2025 statement Apple said it was doing extra engineering so that other companies and developers could not access the conversations. In November 2025 Apple enabled the feature for EU users in the first iOS 26.2 beta. iOS 26.2 reached all users in December 2025, and the feature has been available in the EU since then.",
+      "impact_src": [
+        [
+          "Apple Newsroom",
+          "https://www.apple.com/newsroom/2025/09/the-digital-markets-acts-impacts-on-eu-users/"
+        ],
+        [
+          "Hipertextual",
+          "https://hipertextual.com/apple/ios-26-2-ya-disponible-europa-live-translation-airpods/"
+        ]
       ]
     },
     {
+      "slug": "xai-grok",
       "co": "xAI",
       "name": "Grok",
       "what": "xAI's chatbot. It was unavailable in many European countries for a long time, and its training on EU user data is under investigation in Ireland and France.",
@@ -393,9 +560,37 @@
           "Basenor",
           "https://www.basenor.com/blogs/news/grok-rolls-out-across-all-of-europe-xai-expands-continent-wide"
         ]
+      ],
+      "impact": "Grok reached X Premium subscribers in the EU in May 2024, after X reached an agreement with EU regulators. When Grok 3 launched in February 2025, the standalone app was not yet available in the EU, and xAI said it was prioritising compliance with local privacy laws. The app came to Germany's App Store a few days later. Ireland's Data Protection Commission opened a GDPR inquiry in April 2025 into whether X lawfully used EU users' public posts to train Grok, and a second one in February 2026 into sexualised deepfakes made with Grok. Grok 4.5 launched in July 2026 without EU access, with no reason given.",
+      "impact_src": [
+        [
+          "Social Media Today",
+          "https://www.socialmediatoday.com/news/xs-grok-ai-chatbot-is-now-available-to-eu-users/716282/"
+        ],
+        [
+          "Trending Topics",
+          "https://www.trendingtopics.eu/grok-3-europa-verfuegbarkeit/"
+        ],
+        [
+          "iphone-ticker.de",
+          "https://www.iphone-ticker.de/grok-neue-ki-app-von-xai-startet-in-deutschland-250567/"
+        ],
+        [
+          "RTÉ",
+          "https://www.rte.ie/news/business/2025/0411/1507168-dpc-opens-x-inquiry"
+        ],
+        [
+          "Anadolu Agency",
+          "https://www.aa.com.tr/en/europe/ireland-opens-new-data-protection-probe-into-grok-for-deepfakes/3832202"
+        ],
+        [
+          "Trending Topics",
+          "https://www.trendingtopics.eu/spacexai-and-cursor-launch-grok-4-5-not-yet-in-the-eu/"
+        ]
       ]
     },
     {
+      "slug": "microsoft-windows-recall",
       "co": "Microsoft",
       "name": "Windows Recall",
       "what": "Searchable photographic memory of everything you've done on a Copilot+ PC. The EEA got it months later, with an EU-only export feature.",
@@ -417,9 +612,21 @@
           "ITdaily",
           "https://itdaily.com/news/software/windows-recall-available-europe"
         ]
+      ],
+      "impact": "Microsoft relaunched Recall on Copilot+ PCs in April 2025 but left out the European Economic Area, saying it would arrive there \"later in 2025\". Microsoft did not name a rule, and the link to EU regulation comes from press reporting. For the EEA it built an export feature that lets users share their Recall snapshots with trusted third-party apps and websites. It said the changes reflected its \"ongoing commitment to complying with applicable laws and regulations\". Recall became available in Europe in July 2025, and export remains limited to EEA devices.",
+      "impact_src": [
+        [
+          "heise online",
+          "https://heise.de/-10364475"
+        ],
+        [
+          "The Register",
+          "https://www.theregister.com/2025/06/16/microsoft_snapshot_export_recall/"
+        ]
       ]
     },
     {
+      "slug": "meta-threads",
       "co": "Meta",
       "name": "Threads",
       "what": "Meta's text-based social app. It had 100 million sign-ups worldwide before people in the EU could even download it.",
@@ -440,9 +647,11 @@
           "MacRumors",
           "https://macrumors.com/2023/12/14/threads-launches-in-the-eu"
         ]
-      ]
+      ],
+      "impact": "Meta launched Threads in July 2023 but kept it out of the EU and took steps to block EU users who tried to reach it through a VPN. Meta did not name a specific rule, and press reports linked the delay to EU rules such as the Digital Markets Act. Threads opened in the EU on 14 December 2023, five months later, when it had nearly 100 million monthly users. EU users also got a browse-only mode that works without an Instagram account, which press reports linked to EU rules. Threads has been fully available in the EU since then."
     },
     {
+      "slug": "google-bard",
       "co": "Google",
       "name": "Bard",
       "what": "Google's first chatbot, the predecessor of Gemini. It went live in 180 countries before the EU.",
@@ -462,6 +671,13 @@
         [
           "RTÉ",
           "https://www.rte.ie/news/2023/0713/1394274-google-ai-bard"
+        ]
+      ],
+      "impact": "Google opened Bard to about 180 countries in May 2023 but not the EU. In June 2023 it delayed the EU launch after the Irish Data Protection Commission said Google had not given enough information to address its privacy concerns. Before launching, Google made changes the DPC asked for, including more transparency and changed user controls, and agreed to report back to the regulator three months later. Bard launched in the EU on 13 July 2023, and Google said it had \"proactively engaged with experts, policymakers and privacy regulators\". Google renamed Bard to Gemini in February 2024.",
+      "impact_src": [
+        [
+          "Google",
+          "https://blog.google/products/gemini/bard-gemini-advanced-app/"
         ]
       ]
     }

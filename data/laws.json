@@ -1,0 +1,157 @@
+{
+  "DMA": {
+    "full": "Digital Markets Act (Regulation (EU) 2022/1925)",
+    "summary": "The Digital Markets Act is an EU regulation that sets rules for a small number of very large online platforms the European Commission designates as \"gatekeepers\", currently including Alphabet, Amazon, Apple, ByteDance, Meta, Microsoft and Booking. It entered into force in November 2022, and gatekeepers have had to comply with its obligations since March 2024. Among other things, it requires gatekeepers to allow interoperability and alternative app stores, to stop favouring their own services, and to obtain user consent before combining personal data across their services. Some companies say these obligations are the reason they delay or withhold certain features in the EU. The Commission enforces the DMA and can fine gatekeepers up to 10% of global annual turnover.",
+    "links": [
+      [
+        "European Commission: Digital Markets Act",
+        "https://digital-markets-act.ec.europa.eu/index_en"
+      ]
+    ],
+    "eu": true,
+    "contacts": [
+      {
+        "name": "Andreas Schwab",
+        "group": "EPP",
+        "country": "Germany",
+        "role": "Parliament's lead negotiator (rapporteur) on the DMA",
+        "email": "andreas.schwab@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/28223"
+      }
+    ]
+  },
+  "GDPR": {
+    "full": "General Data Protection Regulation (Regulation (EU) 2016/679)",
+    "summary": "The General Data Protection Regulation is the EU's main data protection law. It has applied since 25 May 2018 across the European Economic Area, and the UK keeps a near-identical version (the UK GDPR). It applies to any organisation that processes personal data of people in Europe, wherever the organisation is based. It requires a legal basis for each use of personal data, extra safeguards for sensitive data such as biometrics, and data protection impact assessments for high-risk processing, and national data protection authorities can fine companies up to 4% of global annual turnover. Changes to the GDPR proposed in the Commission's November 2025 \"Digital Omnibus\" are still being negotiated in Parliament.",
+    "links": [
+      [
+        "European Commission: Legal framework of EU data protection",
+        "https://commission.europa.eu/law/law-topic/data-protection/legal-framework-eu-data-protection_en"
+      ]
+    ],
+    "eu": true,
+    "contacts": [
+      {
+        "name": "Marina Kaljurand",
+        "group": "S&D",
+        "country": "Estonia",
+        "role": "Parliament co-rapporteur on the Digital Omnibus changes to the GDPR and data rules",
+        "email": "marina.kaljurand@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/197491"
+      },
+      {
+        "name": "Aura Salla",
+        "group": "EPP",
+        "country": "Finland",
+        "role": "Parliament co-rapporteur on the Digital Omnibus changes to the GDPR and data rules",
+        "email": "aura.salla@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/98219"
+      }
+    ]
+  },
+  "AI Act": {
+    "full": "Artificial Intelligence Act (Regulation (EU) 2024/1689)",
+    "summary": "The AI Act is the EU's law on artificial intelligence, covering anyone who develops, sells or uses AI systems in the EU. It entered into force in August 2024 and is being phased in: bans on certain practices, such as emotion recognition in workplaces and schools, have applied since February 2025, and obligations for general-purpose AI models since August 2025. Stricter requirements for \"high-risk\" systems, such as those used in hiring, credit or critical infrastructure, have been pushed back to 2027 and 2028 under the \"Digital Omnibus\" changes to the Act. Providers must document their models, assess and mitigate risks, and be transparent about AI-generated content.",
+    "links": [
+      [
+        "European Commission: AI Act",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      ]
+    ],
+    "eu": true,
+    "contacts": [
+      {
+        "name": "Brando Benifei",
+        "group": "S&D",
+        "country": "Italy",
+        "role": "Parliament co-rapporteur (lead negotiator) on the AI Act",
+        "email": "brando.benifei@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/124867"
+      },
+      {
+        "name": "Michael McNamara",
+        "group": "Renew",
+        "country": "Ireland",
+        "role": "Parliament rapporteur on the Digital Omnibus changes to the AI Act",
+        "email": "michael.mcnamara@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/257300"
+      }
+    ]
+  },
+  "MiCA": {
+    "full": "Markets in Crypto-Assets Regulation (Regulation (EU) 2023/1114)",
+    "summary": "The Markets in Crypto-Assets Regulation sets EU-wide rules for issuing crypto-assets and for the companies that offer crypto services such as exchanges, brokers and wallet custodians. Its rules on stablecoins have applied since 30 June 2024, and its rules for crypto-asset service providers since 30 December 2024. Firms must be authorised by a national regulator before they can serve EU customers. Stablecoin issuers must hold reserves, publish a white paper and meet limits on large-scale use. Products that don't meet these requirements, including some stablecoins, cannot be offered to people in the EU.",
+    "links": [
+      [
+        "ESMA: Markets in Crypto-Assets Regulation (MiCA)",
+        "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+      ]
+    ],
+    "eu": true,
+    "contacts": [
+      {
+        "name": "Stefan Berger",
+        "group": "EPP",
+        "country": "Germany",
+        "role": "Parliament's lead negotiator (rapporteur) on MiCA",
+        "email": "stefan.berger@europarl.europa.eu",
+        "profile": "https://www.europarl.europa.eu/meps/en/197410"
+      }
+    ]
+  },
+  "Investigatory Powers Act": {
+    "full": "Investigatory Powers Act 2016 (UK, 2016 c. 25)",
+    "summary": "The Investigatory Powers Act 2016 is the UK law that governs surveillance by intelligence agencies and police, including interception of communications and access to communications data. Under section 253, the Home Secretary can serve a \"technical capability notice\" that requires a telecoms or tech company to maintain the ability to provide data when served with a warrant. Recipients are legally barred from disclosing that they received a notice. In February 2025, after reports that the Home Office had served such a notice on Apple, Apple stopped offering its end-to-end encrypted iCloud backups (Advanced Data Protection) to new UK users.",
+    "links": [
+      [
+        "legislation.gov.uk: Investigatory Powers Act 2016",
+        "https://www.legislation.gov.uk/ukpga/2016/25/contents"
+      ],
+      [
+        "legislation.gov.uk: Section 253, technical capability notices",
+        "https://www.legislation.gov.uk/ukpga/2016/25/part/9/chapter/1"
+      ]
+    ],
+    "eu": false,
+    "contacts": []
+  },
+  "Vehicle type-approval": {
+    "full": "EU vehicle type-approval framework (Regulation (EU) 2018/858 and General Safety Regulation (EU) 2019/2144) and UNECE vehicle regulations",
+    "summary": "Before a car or a driving system can be sold or switched on in the EU, it has to be type-approved by a national authority under the EU framework, mainly Regulation (EU) 2018/858 and the General Safety Regulation (EU) 2019/2144. For driver-assistance and automated driving, the EU largely follows technical rules agreed at the UN Economic Commission for Europe (UNECE), such as UN Regulation 79 on steering and UN Regulation 171 on driver control assistance systems, which the EU adopted in 2024. Supervised systems that go beyond these rules, such as Tesla's FSD (Supervised), need an exemption or a new approval route. In April 2026 the Dutch regulator RDW became the first in Europe to approve FSD (Supervised), Other EU countries can choose to accept that national approval, and an EU-wide decision is still pending.",
+    "links": [
+      [
+        "European Commission: Vehicle safety and automated/connected vehicles",
+        "https://single-market-economy.ec.europa.eu/sectors/automotive-industry/vehicle-safety-and-automatedconnected-vehicles_en"
+      ],
+      [
+        "European Commission: Motor vehicle legislation",
+        "https://single-market-economy.ec.europa.eu/sectors/automotive-industry/legislation/motor-vehicles-trailers_en"
+      ]
+    ],
+    "eu": false,
+    "contacts": []
+  },
+  "No AV framework": {
+    "full": "No EU-wide framework for commercial driverless (Level 4) services",
+    "summary": "The EU has technical type-approval rules for fully driverless vehicles, such as shuttles and robotaxis, under Implementing Regulation (EU) 2022/1426. But there is no EU-wide law that lets companies run commercial driverless taxi services across the bloc. Permission to operate depends on national traffic and transport law, and only a few member states, such as Germany, have national rules for Level 4 operation. As a result, robotaxi services that operate commercially in the US and China are not generally available in Europe. In contrast, the UK passed the Automated Vehicles Act 2024, which sets up a national scheme for authorising self-driving vehicles, licensing operators of vehicles with no one in charge, and permitting automated passenger services.",
+    "links": [
+      [
+        "European Commission: Vehicle safety and automated/connected vehicles",
+        "https://single-market-economy.ec.europa.eu/sectors/automotive-industry/vehicle-safety-and-automatedconnected-vehicles_en"
+      ],
+      [
+        "legislation.gov.uk: Automated Vehicles Act 2024",
+        "https://www.legislation.gov.uk/ukpga/2024/10/contents"
+      ]
+    ],
+    "eu": false,
+    "contacts": []
+  },
+  "Unstated": {
+    "full": "No rule named",
+    "summary": "The company has not said which law, if any, is the reason this feature is unavailable in Europe. Press coverage links the gap to European regulation, most often the GDPR, the Digital Markets Act or the AI Act, but that link is an inference by journalists and analysts, not something the company has confirmed.",
+    "links": [],
+    "eu": false,
+    "contacts": []
+  }
+}
