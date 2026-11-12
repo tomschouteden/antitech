@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/stats/script.js", "destination": "https://umami.move47.co/script.js" },
+    { "source": "/stats/api/send", "destination": "https://umami.move47.co/api/send" }
+  ]
+}
