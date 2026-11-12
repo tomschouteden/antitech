@@ -115,6 +115,22 @@
   .src a{color:var(--mute);text-underline-offset:2px}
   .src a:hover{color:var(--ink)}
 
+  /* holosign plug */
+  .plug{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:28px;padding:24px 28px;
+    background:var(--paper-2);border-bottom:1px solid var(--line);border-left:8px solid var(--signal)}
+  .plug .logo{display:grid;place-items:center;width:52px;height:52px;border:1px solid var(--ink);background:#fff}
+  .plug .logo svg{width:28px;height:28px}
+  .plug h2{font-variation-settings:"wdth" 72;font-weight:800;font-size:clamp(28px,3.4vw,40px);line-height:.95;
+    text-transform:uppercase;letter-spacing:-.005em;margin-top:6px}
+  .plug h2 em{font-style:normal;color:var(--signal);white-space:nowrap}
+  .plug p{margin-top:8px;color:#2b2925;font-size:14.5px}
+  .plug .zero{display:flex;align-items:baseline;gap:10px}
+  .plug .zero .n{font-variation-settings:"wdth" 62;font-weight:900;font-size:88px;line-height:.82;color:var(--ok)}
+  .plug .zero .u{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;line-height:1.35;color:var(--mute)}
+  .plug a.go{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;
+    padding:12px 16px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);white-space:nowrap}
+  .plug a.go:hover{background:var(--signal);border-color:var(--signal)}
+
   /* footer */
   footer{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:28px;font-size:13.5px;color:#2b2925}
   footer h3{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;color:var(--ink)}
@@ -131,6 +147,10 @@
     .stat .n{font-size:34px}
     footer{grid-template-columns:1fr;padding:20px 16px}
     .bar .sort{margin-left:0}
+    .plug{grid-template-columns:auto 1fr;gap:16px 18px;padding:20px 16px;border-left-width:6px}
+    .plug .zero,.plug a.go{grid-column:1/-1}
+    .plug a.go{justify-self:start}
+    .plug .zero .n{font-size:64px}
   }
 </style>
 <script defer src="/stats/script.js" data-website-id="0db22b3b-f31e-4eb3-b6e3-dd82995d69ca" data-host-url="/stats" data-domains="antitech.eu,www.antitech.eu"></script>
@@ -166,6 +186,17 @@
 </nav>
 
 <main id="grid"></main>
+
+<aside class="plug" aria-label="Holosign">
+  <div class="logo"><svg viewBox="100 100 600 600" role="img" aria-label="Holosign logo"><path fill="currentColor" d="m183.25 186.39l-78.57 427.22h408.26l-61.19-178h-74.53l38.09 110.81h-232.3l57.07-360.03z"/><path fill="currentColor" d="m616.05 613.61l78.57-427.22h-408.26l61.19 178h74.53l-38.09-110.81h232.31l-57.08 360.03z"/></svg></div>
+  <div>
+    <div class="kicker">A small plug from the people who made this</div>
+    <h2>Not anti-tech. <em>Pro-innovation.</em></h2>
+    <p>Sign your docs with Holosign. Unlimited e-signatures, and it already works in Europe.</p>
+  </div>
+  <div class="zero"><span class="n">0</span><span class="u">days<br>behind</span></div>
+  <a class="go" href="https://holosign.co/?utm_source=antitech.eu&amp;utm_medium=referral&amp;utm_campaign=antitech" target="_blank" rel="noreferrer">Meet Holosign ↗</a>
+</aside>
 
 <footer>
   <div>
