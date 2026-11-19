@@ -153,5 +153,21 @@
     "links": [],
     "eu": false,
     "contacts": []
+  },
+  "French anti-piracy law": {
+    "full": "Article L.333-10 of the French Sports Code (Code du sport)",
+    "summary": "Article L.333-10 of the French Sports Code, added in 2021, lets holders of sports broadcasting rights ask a Paris court to order blocking of sites and services that repeatedly stream their events without permission. Orders can cover a whole competition season, and can extend to new sites that appear after the order. Courts have applied it not only to internet providers but also to other intermediaries, such as public DNS services. It is a French national law, not an EU one, and enforcement is supported by the French media regulator Arcom.",
+    "links": [
+      [
+        "Paris judicial court ruling against Quad9, 21 October 2026 (PDF, French)",
+        "https://quad9.net/uploads/20261021_-_Jugement_selon_la_PAF.PDF"
+      ],
+      [
+        "Arcom: legal texts",
+        "https://www.arcom.fr/se-documenter/espace-juridique/textes-juridiques"
+      ]
+    ],
+    "eu": false,
+    "contacts": []
   }
 }

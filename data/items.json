@@ -1,6 +1,43 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-19",
   "items": [
+    {
+      "slug": "quad9-dns",
+      "co": "Quad9",
+      "name": "Quad9 DNS",
+      "what": "The non-profit 9.9.9.9 DNS service that blocks malware and phishing domains. Quad9 stops serving users in France on 24 November rather than obey a court order to block pirate sports streams.",
+      "launched": "2017-11-16",
+      "arrived": null,
+      "removed": "2026-11-24",
+      "approx": true,
+      "status": "removed",
+      "regions": [
+        "EU"
+      ],
+      "rule": "French anti-piracy law",
+      "cite": "stated",
+      "src": [
+        [
+          "Quad9",
+          "https://quad9.net/news/blog/au-revoir-france/"
+        ],
+        [
+          "CyberInsider",
+          "https://cyberinsider.com/quad9-to-leave-france/"
+        ]
+      ],
+      "impact": "On 13 May 2026 the Paris judicial court, at the request of beIN Sports France, ordered Quad9 to block access from France to pirate IPTV services streaming the 2026 WTA tennis season, until 14 November 2026. Quad9 did not comply, and on 21 October the court added a penalty of €1,000 for each day of delay. Quad9 said compliance is \"technically unfeasible\" and \"directly contradicts our mandate to serve the public\", and that it keeps no list of French users. It announced it would stop serving users in France, both its malware filtering and plain DNS, from 24 November 2026, while it appeals.",
+      "impact_src": [
+        [
+          "Paris judicial court ruling, 21 October 2026",
+          "https://quad9.net/uploads/20261021_-_Jugement_selon_la_PAF.PDF"
+        ],
+        [
+          "Mullvad",
+          "https://mullvad.net/en/blog/2026/11/17/quad9-will-withdraw-their-service-from-france"
+        ]
+      ]
+    },
     {
       "slug": "binance-exchange",
       "co": "Binance",
